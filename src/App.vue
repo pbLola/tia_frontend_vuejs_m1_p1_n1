@@ -1,6 +1,6 @@
 <template>
   <div class="container app-root">
-    <cardProfile />
+    <CardProfile />
   </div>
 </template>
 
@@ -9,7 +9,7 @@ import CardProfile from "./components/CardProfile.vue"
 
 export default {
   name: "App",
-  components: { cardProfile },
+  components: { CardProfile },
 }
 </script>
 <style>

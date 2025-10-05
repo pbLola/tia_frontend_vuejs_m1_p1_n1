@@ -34,57 +34,56 @@
   --elevation-1: 0 6px 14px rgba(0, 0, 0, 0.12);
   --glass-br: rgba(255, 255, 255, 0.04);
   --focus-outline: 3px solid rgba(200, 130, 70, 0.25);
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body,
+#app {
+  height: 100px;
+}
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: var(--body-size);
+  -webkit-font-smoothing: antialiased;
+  background: linear-gradient(
+    180dg,
+    var(--color-dark-vanilla),
+    rgba(206, 197, 129, 0.95)
+  );
+  color: var(--color-kelp);
+}
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: var(--space-md);
+}
 
-  * {
-    box-sizing: border-box;
-  }
-  html,
-  body,
-  #app {
-    height: 100px;
-  }
-  body {
-    margin: 0;
-    font-family: var(--font-body);
-    font-size: var(--body-size);
-    -webkit-font-smoothing: antialiased;
-    background: linear-gradient(
-      180dg,
-      var(--color-dark-vanilla),
-      rgba(206, 197, 129, 0.95)
-    );
-    color: var(--color-kelp);
-  }
-  .container {
-    max-width: 980px;
-    margin: 0 auto;
-    padding: var(--space-md);
-  }
-
-  .btn {
-    /* botão base */
-    padding: 10px 14px;
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
-    font-weight: 600;
-  }
-  .btn-primary {
-    /* botão primário */
-    background: linear-gradient(90deg, var(--color-kelp), var(--color-willow));
-    color: var(--color-platinum);
-  }
-  .input {
-    /* baase */
-    padding: 10px;
-    border-radius: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.06);
-    width: 100px;
-  }
-  .card-base {
-    border-radius: var(--radius-md);
-    box-shadow: var(--elevation-1);
-    backdrop-filter: blur(6px);
-    border: 1px solid rgba(0, 0, 0, 0.05);
-  }
+.btn {
+  /* botão base */
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+.btn-primary {
+  /* botão primário */
+  background: linear-gradient(90deg, var(--color-kelp), var(--color-willow));
+  color: var(--color-platinum);
+}
+.input {
+  /* baase */
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  width: 100px;
+}
+.card-base {
+  border-radius: var(--radius-md);
+  box-shadow: var(--elevation-1);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(0, 0, 0, 0.05);
 }

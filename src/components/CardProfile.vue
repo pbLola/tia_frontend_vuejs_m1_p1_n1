@@ -1,5 +1,5 @@
 <template>
-  <article>
+  <article class="card">
     <img :src="avatarSrc" alt="Avatar de {{ name }}" class="avatar" />
     <h2 class="card-title">{{ name }}</h2>
     <p class="card-description">{{ description }}</p>
